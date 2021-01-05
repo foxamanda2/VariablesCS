@@ -32,15 +32,11 @@ namespace VariablesCS
         var firstOperand = double.Parse(secondNumberAsString);
         var secondOperand = double.Parse(secondNumberAsString);
 
-        // Sum
+        // Math
         var sum = (firstOperand+secondOperand);
-        // Difference
         var difference = (secondOperand-firstOperand);
-        // Product
         var product=(secondOperand*firstOperand);
-        // Quotient
         var quotient=(firstOperand/secondOperand);
-        // Remainder
         var remainder=(firstOperand%secondOperand);
         
         Console.WriteLine($"The sum of your numbers is: {sum}.\nThe difference of your numbers is: {difference}.\nThe quotient of your numbers is: {quotient}.\nThe product of your numbers is: {product}.\nThe remainder of your numbers is: {remainder}. ");
