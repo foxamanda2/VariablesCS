@@ -18,13 +18,12 @@ namespace VariablesCS
             var userName = Console.ReadLine().ToLower();
 
 
-            //Only for Alice
+            // Only for Alice, Bob, and Gavin
             if (userName == "alice")
             {
                 Console.WriteLine("Go Away Alice");
                 Environment.Exit(-1);
             }
-
             else if (userName == "bob")
             {
                 Console.WriteLine("Hazzah! Bobby Has Arrived");
@@ -34,14 +33,13 @@ namespace VariablesCS
                 Console.WriteLine("Hey Gavin!");
                 Console.Write("Whats a cows favorite movie?");
                 var jokeAnswer = Console.ReadLine();
-                Console.WriteLine($"Moo-lan, but {jokeAnswer} was super close.");
-
+                Console.WriteLine($"Moo-lan, but {jokeAnswer} was super close. Good Job!");
             }
-
             else
             {
                 Console.WriteLine($"Hello {userName}! Have a great day!");
             }
+
             // Practice getting different types of inputs
             Console.Write("Give me a number: ");
             string firstNumberAsString = Console.ReadLine();
@@ -59,7 +57,7 @@ namespace VariablesCS
             // Math
             var sum = (firstOperand + secondOperand);
             var difference = (secondOperand - firstOperand);
-            var product = (secondOperand * firstOperand);
+            var product= (secondOperand * firstOperand);
             var quotient = (firstOperand / secondOperand);
             var remainder = (firstOperand % secondOperand);
 
